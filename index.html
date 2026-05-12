@@ -91,30 +91,14 @@
     animation: fadeUp 1.2s ease both;
   }
 
+  /* BORDE ESTÁTICO */
   .photo-frame::before {
     content: '';
     position: absolute;
     inset: -8px;
     border-radius: 50%;
-    border: 1.5px solid #e8a4b8;
-    animation: spin 20s linear infinite;
-    opacity: 0.6;
-
-    background: conic-gradient(
-      transparent 0deg,
-      #f9ccd8 60deg,
-      transparent 120deg,
-      #f9ccd8 200deg,
-      transparent 280deg,
-      #f9ccd8 340deg,
-      transparent 360deg
-    );
-  }
-
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
+    border: 2px solid #f3c6d3;
+    opacity: 0.8;
   }
 
   .photo-inner {
